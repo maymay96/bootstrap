@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sixsense</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        .container {
+            background-color: rgba(241, 241, 241, 0.5); /* Nền mờ cho nội dung */
+        }
+        
+        .carousel-inner > .item > img {
+            width: 100%;
+            height: auto;
+        }
+        .product-image {
+            
+            height: 200px;
+            object-fit: cover;
+        }
+        .category-image {
+            height: 150px;
+            object-fit: cover;
+        }
+      
+    .w3l-footer-29-main {
+        width: 100%;
+        background-color: #87714f;
+        color: white;
+    }
+
+    .footer-29 {
+        width: 100%;
+        padding: 40px 0;
+    }
+
+    .footer-title-29 {
+        font-size: 18px;
+        margin-bottom: 20px;
+        font-weight: bold;
+        color: #ecf0f1;
+    }
+
+    .footer-list-29 p {
+        font-size: 30px;
+        line-height: 1.5;
+        color: #87714f;
+    }
+
+    .footer-list-29 a {
+        color: #ecf0f1;
+        text-decoration: none;
+    }
+
+    .footer-list-29 a:hover {
+        color: #bbe998; /* Màu vàng khi hover */
+        text-decoration: underline;
+    }
+
+    .subscribe {
+        display: flex;
+        align-items: center;
+        margin-top: 15px;
+    }
+
+    .subscribe input[type="email"] {
+        padding: 10px;
+        border: none;
+        border-radius: 5px 0 0 5px;
+        width: 70%;
+        max-width: 250px;
+    }
+
+    .subscribe button {
+        padding: 10px;
+        border: none;
+        border-radius: 0 5px 5px 0;
+        background-color: #f39c12; /* Màu nền cho nút */
+        color: white;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    .subscribe button:hover {
+        background-color: #827263; /* Màu sáng hơn khi hover */
+    }
+
+    .bottom-copies {
+        background-color: #eaeaea;
+        padding: 15px 0;
+    }
+
+    .copy-footer-29 {
+        margin: 0;
+        font-size: 14px;
+        color: #bdc3c7;
+    }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Navigation -->
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="index.html">Sixsense</a>
+                </div>
+                <ul class="nav navbar-nav">
+                    
+                    <li class="nav-item @@services__active">
+                        <a class="nav-link" href="status.html">STATUS</a>
+                    </li>
+                    <li class="nav-item @@contact__active">
+                        <a class="nav-link" href="contact.html">CONTACTS</a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#">
+                            <span class="badge pull-right">4</span>
+                            <i class="glyphicon glyphicon-shopping-cart"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="account.html"><i class="glyphicon glyphicon-user"></i></a>
+                    </li>
+                    <li>
+                        <a href="#" data-toggle="modal" data-target="#myModal">Sign in</a>
+                    </li>
+                    <li class="nav-item @@trangthai__active">
+                        <a class="nav-link" href="trạng thái.html">TRẠNG THÁI ĐƠN HÀNG</a>
+                    </li>
+                    <li class="nav-item @@giohang__active">
+                        <a class="nav-link" href="giohang.html">GIỎ HÀNG</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Custom Navigation -->
+        <div class="navbar navbar-default">
+            <div class="container">
+                <ul class="nav navbar-nav">
+                    <li><a href="#category1.html">Bánh "ngọt ngào"</a></li>
+                    <li><a href="#category2.html">Bánh "giòn tan"</a></li>
+                    <li><a href="#category3.html">Bánh quy "thơm bơ"</a></li>
+                    <li><a href="#category4.html">Panna sánh mịn</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Search forms for mobile and desktop -->
+       
+
+        <!-- Slider -->
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="https://i.pinimg.com/564x/44/63/95/4463952b6bd26e43e1a39314c3589108.jpg" alt="First slide">
+                    <div class="carousel-caption">Best seller Bánh "ngọt ngào"</div>
+                </div>
+                <div class="item">
+                    <img src="https://i.pinimg.com/564x/1f/3a/2d/1f3a2d53f043b68d35ba4477be8dc0a0.jpg" alt="Second slide">
+                    <div class="carousel-caption">Quá khứ "đầy bơ" của bánh quy</div>
+                </div>
+                <div class="item">
+                    <img src="https://i.pinimg.com/564x/89/da/ed/89daede539c8c13a8c83eea20a34e721.jpg" alt="Third slide">
+                    <div class="carousel-caption">Sự ngọt dịu của panna cotta</div>
+                </div>
+            </div>
+            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            </a>
+            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <!-- Display Categories and Products -->
+        <div class="row">
+            <div class="col-sm-4 col-md-3">
+                <h3>Categories</h3>
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <span class="badge">14</span>
+                        Bánh "ngọt ngào"
+                    </li>
+                    <li class="list-group-item">
+                        <span class="badge">10</span>
+                        Bánh "giòn tan"
+                    </li>
+                    <li class="list-group-item">
+                        <span class="badge">8</span>
+                        Bánh quy "thơm bơ"
+                    </li>
+                    <li class="list-group-item">
+                        <span class="badge">5</span>
+                        Panna sánh mịn
+                    </li>
+                </ul>
+            </div>
+            <div class="col-sm-8 col-md-9">
+                <h3>Best seller</h3>
+                <div class="row">
+                    <div class="col-sm-6 col-md-4">
+                        <div class="thumbnail">
+                            <img src="https://i.pinimg.com/736x/fd/26/de/fd26de3b6cd9df142e14730da5dfb32b.jpg" alt="">
+                            <div class="add-to-cart">
+                                <a href="#" class="glyphicon glyphicon-plus-sign" data-toggle="tooltip" data-placement="top" title="Add to cart"></a>
+                            </div>
+                            <div class="caption">
+                                <h4 class="pull-right">15.000 VNĐ</h4>
+                                <h4>
+                                    <a href="ecommerce-detail.html">1<sup>st</sup> Product</a>
+                                </h4>
+                                <p>Bánh mousse không chỉ là món tráng miệng hoàn hảo sau bữa ăn mà còn là món quà tuyệt vời cho những người thân yêu của bạn. Hãy cùng nhau thưởng thức và chia sẻ những khoảnh khắc ngọt ngào bên nhau nhé!</p>
+                                <div class="ratings">
+                                    <p class="pull-right">
+                                        <a href="ecommerce-detail.html#comments">15 đề xuất</a>
+                                    </p>
+                                    <p>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="thumbnail">
+                            <img src="https://i.pinimg.com/564x/fd/0f/39/fd0f39192fdca40d840559734299c429.jpg" alt="">
+                            <div class="add-to-cart">
+                                <a href="#" class="glyphicon glyphicon-plus-sign" data-toggle="tooltip" data-placement="top" title="Add to cart"></a>
+                            </div>
+                            <div class="caption">
+                                <h4 class="pull-right">23.000 VNĐ</h4>
+                                <h4>
+                                    <a href="ecommerce-detail.html">2<sup>nd</sup> Macaron</a>
+                                </h4>
+                                <p>Bánh macarons với lớp vỏ giòn và nhân kem mịn màng, có đủ màu sắc và hương vị. Đây là món bánh không thể thiếu trong các bữa tiệc sang chảnh! </p>
+                                <div class="ratings">
+                                    <p class="pull-right">
+                                        <a href="ecommerce-detail.html#comments">10 đề xuất</a>
+                                    </p>
+                                    <p>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star-empty"></span>
+                                        <span class="glyphicon glyphicon-star-empty"></span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="thumbnail">
+                            <img src="https://i.pinimg.com/736x/9c/df/a7/9cdfa716963b31ea34d8a95bcd0ecf8b.jpg" alt="">
+                            <div class="add-to-cart">
+                                <a href="#" class="glyphicon glyphicon-plus-sign" data-toggle="tooltip" data-placement="top" title="Add to cart"></a>
+                            </div>
+                            <div class="caption">
+                                <h4 class="pull-right">27.000 VNĐ</h4>
+                                <h4>
+                                    <a href="ecommerce-detail.html">3<sup>rd</sup>Mochi</a>
+                                </h4>
+                                <p>Bánh mochi dẻo dai, thường được nhân với kem hoặc đậu đỏ, mang đến một trải nghiệm ăn uống thú vị và mới lạ. Đây là món bánh đang "gây sốt" trên mạng xã hội! </p>
+                                <div class="ratings">
+                                    <p class="pull-right">
+                                        <a href="ecommerce-detail.html#comments">5 reviews</a>
+                                    </p>
+                                    <p>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star-empty"></span>
+                                        <span class="glyphicon glyphicon-star-empty"></span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Trang Chi Tiết Sản Phẩm -->
+        <h2>Chi Tiết về Bánh</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Tên Sản Phẩm</h2>
+                <img src="https://i.pinimg.com/564x/45/9b/a1/459ba103415a7fc147ad1a3aac8e8e22.jpg" alt="Big Picture" class="img-responsive">
+              
+            </div>
+            <div class="col-md-6">
+                <h3>Bánh Cheesecake dân FA</h3>
+                <p>Cheesecake với độ béo ngậy và hương vị đa dạng như dâu, chanh hay chocolate, luôn là lựa chọn hàng đầu cho những ai thích sự ngọt ngào!</p>
+                <h4>Giá: 50.000 VNĐ</h4>
+
+                <!-- Form for Product Details -->
+                <form role="form">
+                    <div class="number form-group">
+                        <label>Số lượng</label>
+                        <input type="number" class="input-sm form-control" id="number" />
+                    </div>
+                    <div class="form-group">
+                        <label>Nhân bánh</label>
+                        <select id="color" class="form-control">
+                            <option name="color">Việt Quất</option>
+                            <option name="color">Dâu tây</option>
+                            <option name="color">Kiwi</option>
+                            <option name="color">Bắp</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Size bánh</label>
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-default">10cm</button>
+                            <button type="button" class="btn btn-default">12cm</button>
+                            <button type="button" class="btn btn-default">14cm</button>
+                            <button type="button" class="btn btn-default">16cm</button>
+                            <button type="button" class="btn btn-default">20cm</button>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-default">Liên hệ tụi mình</button>
+                        <button type="submit" class="btn btn-success">Thêm vào giỏ hàng</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Reviewer Section -->
+        <div class="description">
+            <p>TRẢI NGHIỆM KHÁCH HÀNG</p>
+        </div>
+        
+        
+
+        <!-- Đánh giá từ người dùng -->
+        <div class="row">
+            
+            <h3>Đánh giá</h3>
+        <form>
+            <div class="form-group">
+                <label for="review">Nhận xét của bạn:</label>
+                <textarea class="form-control" id="review"></textarea>
+            </div>
+            <button type="submit" class="btn btn-success">Gửi Đánh Giá</button>
+        </form>
+
+        </div>
+
+        
+
+        <!-- Hiển thị các đánh giá -->
+        <div class="col-md-12">
+            <span class="glyphicon glyphicon-star"></span>
+            <span class="glyphicon glyphicon-star"></span>
+            <span class="glyphicon glyphicon-star"></span>
+            <span class="glyphicon glyphicon-star"></span>
+            <span class="glyphicon glyphicon-star-empty"></span>
+            David More
+            <span class="pull-right">1 day ago</span>
+            <p>From <em>Mỹ Tho</em></p>
+            <p>
+               Tui rất thích vị bên đây, bánh xinh lắm ^^
+            </p>
+            
+        
+        <section class="w3l-footer-29-main">
+            <div class="footer-29 py-5">
+              <div class="container py-lg-4 py-sm-3">
+                <div class="row footer-top-29">
+                  <div class="col-lg-5 footer-list-29 footer-1">
+                    <h2><a href="index.html" class=""><span class="fa fa-coffee"></span> Sixsense nè</a></h2>
+                    <p>Cùng SIXSENSE thưởng thức, sẻ chia và cảm nhân!
+                    </p>
+                  </div>
+                  <div class="col-lg-3 col-md-6 footer-list-29 footer-3 mt-lg-0 mt-5">
+                    <h6 class="footer-title-29">Get in Touch</h6>
+          
+                    <div class="column2">
+                      <div class="mb-2">
+                        <span>Địa chỉ :</span>
+                        <p class="contact-para d-inline">HCM City</p>
+                      </div>
+                      <div class="">
+                        <span>E-mail :</span><a href="mailto:info@mail.com">sixsense@gmail.com</a>
+                      </div>
+                      <div class="mt-2">
+                        <span>Phone :</span><a href="tel: +(21)-255-886-1234"> +(21)-255-886-1234</a>
+                      </div>
+                    </div>
+                  </div>
+                  
+                </div>
+          
+              </div>
+            </div>
+            <div class="bottom-copies text-center">
+              <div class="container">
+                <p class="copy-footer-29">© 2024 Sixsense. All rights reserved | Designed by May </p>
+              </div>
+            </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sixsense</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            margin-top: 20px;
+        }
+        .navbar {
+            margin-bottom: 20px;
+        }
+        .thumbnail {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+            margin-bottom: 15px;
+        }
+        .thumbnail img {
+            border-radius: 5px;
+            max-width: 100px; /* Kích thước hình ảnh */
+            height: auto;
+        }
+        .status-button {
+            border-radius: 5px;
+        }
+        .order-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+        }
+        .order-price {
+            font-size: 16px;
+            color: #28a745; /* Màu xanh cho giá */
+        }
+        .notification-link {
+            color: #007bff; /* Màu xanh cho liên kết thông báo */
+        }
+        .notification-link:hover {
+            text-decoration: underline; /* Hiệu ứng khi hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Navigation -->
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="index.html">Sixsense</a>
+                </div>
+                <ul class="nav navbar-nav">
+                   
+                    <li><a href="status.html">STATUS</a></li>
+                    <li><a href="contact.html">CONTACTS</a></li>
+                    <li><a href="trạng thái.html">TRẠNG THÁI ĐƠN HÀNG</a></li>
+                    <li><a href="giohang.html">GIỎ HÀNG</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#">
+                            <span class="badge pull-right">4</span>
+                            <i class="glyphicon glyphicon-shopping-cart"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="account.html"><i class="glyphicon glyphicon-user"></i></a>
+                    </li>
+                    <li>
+                        <a href="#" data-toggle="modal" data-target="#myModal">Sign in</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        
+        <h3 class="text-center">Orders Status</h3>
+
+        <div class="thumbnail">
+            <div class="row align-items-center">
+                <div class="col-sm-1">
+                    <img class="img-responsive" src="https://i.pinimg.com/564x/2a/74/5c/2a745c08d67dfb08a3ea69720a7afbd3.jpg" alt="Product Image" />
+                </div>
+                <div class="col-sm-4">
+                    <a href="product.html" class="order-title">Bánh Quy Bơ</a>
+                </div>
+                <div class="col-sm-1 text-center">
+                    <span>1</span>
+                </div>
+                <div class="col-sm-2 text-center">
+                    <span class="order-price">30.000 VNĐ</span>
+                </div>
+                <div class="col-sm-2 text-center">
+                    <button class="btn btn-sm btn-danger status-button">Đã hủy</button>
+                </div>
+                <div class="col-sm-2 text-center">
+                    <a href="#" class="notification-link">3 Thông báo</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="thumbnail">
+            <div class="row align-items-center">
+                <div class="col-sm-1">
+                    <img class="img-responsive" src="https://i.pinimg.com/564x/5f/6d/d3/5f6dd3848b0d6952f8b115771e33ac84.jpg" alt="Product Image" />
+                </div>
+                <div class="col-sm-4">
+                    <a href="product.html" class="order-title">Bánh Mousse</a>
+                </div>
+                <div class="col-sm-1 text-center">
+                    <span>2</span>
+                </div>
+                <div class="col-sm-2 text-center">
+                    <span class="order-price">45.000 VNĐ</span>
+                </div>
+                <div class="col-sm-2 text-center">
+                    <button class="btn btn-sm btn-warning status-button">Đang xử lý</button>
+                </div>
+                <div class="col-sm-2 text-center">
+                    <a href="#" class="notification-link">0 Thông báo</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="thumbnail">
+            <div class="row align-items-center">
+                <div class="col-sm-1">
+                    <img class="img-responsive" src="https://i.pinimg.com/564x/d0/9c/27/d09c2793edf4933ca1a6e154ad86414e.jpg" alt="Product Image" />
+                </div>
+                <div class="col-sm-4">
+                    <a href="product.html" class="order-title">Panna cotta
+                    </a>
+                </div>
+                <div class="col-sm-1 text-center">
+                    <span>1</span>
+                </div>
+                <div class="col-sm-2 text-center">
+                    <span class="order-price">60.000 VNĐ</span>
+                </div>
+                <div class="col-sm-2 text-center">
+                    <button class="btn btn-sm btn-success status-button">Đã hoàn thành</button>
+                </div>
+                <div class="col-sm-2 text-center">
+                    <a href="#" class="notification-link">1 Thông báo</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
